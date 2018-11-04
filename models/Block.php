@@ -11,6 +11,11 @@ class Block {
 		$this->_data = array();
 	}
 
+	/**
+	 * set value for this instance that can be used in template file
+	 * @param $key
+	 * @param $value
+	 */
 	public function setData($key,$value) {
 		if($key!='' and $key!=null) {
 			$this->_data[$key] = $value;
@@ -19,6 +24,13 @@ class Block {
 		return $this;
 	}
 
+	/**
+	 * get specific value based on key
+	 * if key does not exists return null
+	 * if no key specified, return all data
+	 * @param $key
+	 * @return string|array|null
+	 */
 	public function getData($key=null) {
 		if($key==null) {
 			return $this->_data;
@@ -30,6 +42,11 @@ class Block {
 		}
 	}
 
+	/**
+	 * render a phtml file for UI part of app.
+	 * @param $file_path: array of location to file under 'views folder'. each entry is a folder
+	 * last entry is the file name without the extension
+	 */
 	public function render($file_path) {
 		if(!is_array($file_path)) {
 			$file_path = array($file_path);

@@ -1,6 +1,9 @@
 <?php
 namespace Model;
 
+/**
+ * comment model
+ */
 class Comment extends DbConn {
 
 

@@ -1,5 +1,8 @@
 <?php
 namespace Controller;
+/**
+ * controller of point of entry
+ */
 class IndexController extends BaseController {
 
 	/**

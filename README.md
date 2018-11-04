@@ -8,6 +8,8 @@ download project, cd into project folder root and run:
 php -S localhost:8888 index.php
 ```
 
+app should now be available on http://localhost:8888/
+
 if a different port or local name is prefered when starting up the server,
 change value of DOMAIN_URL inside configs/Globals.php
 
@@ -15,6 +17,13 @@ use the .htaccess.sample to set up with apache server for correct routing
 
 please see configuration files configs/Db.php to set up database information
 for creating a connection
+
+the table can be created by running the migrate() function of the comments model.
+
+```
+$comment = new \Model\Comment();
+$comment->migrate();
+```
 
 two databases are supported: MySql and SqLite
 
