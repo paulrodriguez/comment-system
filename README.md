@@ -35,8 +35,13 @@ unit test cases are only available for PHP models using phpunit.
 please see under tests folder.
 
 ## libraries
+
 __phpunit__: testing PHP classes
+
 __VueJs__: rendering dynamic content on frontend
+
 __axios__: sending AJAX request to backend server
+
 __momentjs__: format dates in frontend
+
 __bootstrap__: styling content
