@@ -1,0 +1,33 @@
+.subcomments {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.comment-wrapper {
+  margin-bottom: 20px;
+  margin-top:10px;
+  border-bottom: 1px solid gray;
+}
+
+.comment-wrapper.last {
+  border-bottom: 0px;
+}
+
+.comment-form {
+  width: 50%;
+}
+.content {
+  padding:5px;
+}
+
+.subcomment-wrapper {
+    margin-bottom: 10px;
+
+}
+
+.subcomment-wrapper.last {
+  border-bottom: 0px;
+}
+#app {
+  width: 70%;
+  margin: 0 auto;
+}
